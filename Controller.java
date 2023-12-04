@@ -5,12 +5,11 @@ import com.javarush.task.task28.task2810.model.Provider;
 import java.util.Arrays;
 
 public class Controller {
+
     private Provider[] providers;
 
-    public Controller(Provider...providers) throws IllegalArgumentException{
-        if(providers.length==0){
-            throw new IllegalArgumentException();
-        }
+    public Controller(Provider... providers) {
+        if (providers.length == 0) throw new IllegalArgumentException();
         this.providers = providers;
     }
 
